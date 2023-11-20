@@ -21,6 +21,7 @@ public void testReverseInPlace() {
 ```
 
 **Symptom Shown by Running Tests**
+
 ![image](https://github.com/deeg-p23/cse15l-labs/assets/133953132/4ecbd26e-b9b2-42d4-bb1b-1acf542eb241)
 
 **Bug Fix for reverseInPlace(int[] arr)**
