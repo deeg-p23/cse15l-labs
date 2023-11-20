@@ -1,5 +1,5 @@
 ## Lab Report 4
-### Step 4
+### Step 1 (4/9)
 Entered into the terminal: 
 ```
 $ ssh cs15lfa23nx@ieng6.ucsd.edu
@@ -9,7 +9,7 @@ Then I entered in my password (didn't setup the private key on this device).
 
 ![image](https://github.com/deeg-p23/cse15l-labs/assets/133953132/6fda7827-60d9-4171-8ba2-c9dde5b66463)
 
-### Step 5
+### Step 2 (5/9)
 
 Entered into the terminal:
 ```
@@ -19,7 +19,7 @@ Used this command in order to clone the forked repository made on my GitHub prof
 
 ![image](https://github.com/deeg-p23/cse15l-labs/assets/133953132/143a8577-3921-4226-a67b-fa70e639ce4a)
 
-### Step 6
+### Step 3 (6/9)
 
 Entered into the terminal:
 ```
@@ -33,7 +33,7 @@ $ bash test.sh
 
 ![image](https://github.com/deeg-p23/cse15l-labs/assets/133953132/13b00aea-0c54-4c4f-9c7c-a93a4abd1954)
 
-### Step 7
+### Step 4 (7/9)
 
 Entered into the terminal:
 ```
@@ -48,7 +48,7 @@ Finally, pressed <esc> one last time, then <:wq> to save and exit the edits.
 
 ![image](https://github.com/deeg-p23/cse15l-labs/assets/133953132/74183a39-b3a5-45c7-93bc-6ed8ba2602c2)
 
-### Step 8
+### Step 5 (8/9)
 
 Entered into the terminal:
 ```
@@ -58,7 +58,7 @@ Used this command in order to run the given test.sh bash file for compiling and 
 
 ![image](https://github.com/deeg-p23/cse15l-labs/assets/133953132/78387666-5ed0-4c2b-b5cf-7eb1219c95a0)
 
-### Step 9
+### Step 6 (9/9)
 
 Entered into the terminal:
 ```
