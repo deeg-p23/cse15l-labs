@@ -1,8 +1,47 @@
 ### Part 1
 
-Unable to complete this part, continuously running into the following error where I'm in the correct directory and using the correct command to compile all .java files with jUnit, but it refuses to work.
-![image](https://github.com/deeg-p23/cse15l-labs/assets/133953132/c22bd851-b92b-499f-bcda-7ddf6be5a838)
+**Failure-Inducing Input for jUnit Test**
+```
+	@Test 
+	public void testReverseInPlace() {
+    int[] input1 = { 5, 4, 3, 2, 1 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 1, 2, 3, 4, 5 }, input1);
+	}
+```
 
+**Pass-Inducing Input for jUnit Test**
+```
+  @Test 
+	public void testReverseInPlace() {
+    int[] input1 = { 1 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 1 }, input1);
+	}
+```
+
+**Symptom Shown by Running Tests**
+![image](https://github.com/deeg-p23/cse15l-labs/assets/133953132/4ecbd26e-b9b2-42d4-bb1b-1acf542eb241)
+
+**Bug Fix for reverseInPlace(int[] arr)**
+_Before:_
+```
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
+_After:_
+```
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length/2; i += 1) {
+      int tempInt = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length - i - 1] = tempInt;
+    }
+  }
+```
 
 ---
 ### Part 2
