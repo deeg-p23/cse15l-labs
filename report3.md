@@ -25,7 +25,9 @@ public void testReverseInPlace() {
 ![image](https://github.com/deeg-p23/cse15l-labs/assets/133953132/4ecbd26e-b9b2-42d4-bb1b-1acf542eb241)
 
 **Bug Fix for reverseInPlace(int[] arr)**
+
 _Before:_
+
 ```
 static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
@@ -33,7 +35,9 @@ static void reverseInPlace(int[] arr) {
     }
 }
 ```
+
 _After:_
+
 ```
 static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length/2; i += 1) {
