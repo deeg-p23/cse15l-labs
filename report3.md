@@ -2,22 +2,22 @@
 
 **Failure-Inducing Input for jUnit Test**
 ```
-	@Test 
-	public void testReverseInPlace() {
+@Test 
+public void testReverseInPlace() {
     int[] input1 = { 5, 4, 3, 2, 1 };
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 1, 2, 3, 4, 5 }, input1);
-	}
+}
 ```
 
 **Pass-Inducing Input for jUnit Test**
 ```
-  @Test 
-	public void testReverseInPlace() {
+@Test 
+public void testReverseInPlace() {
     int[] input1 = { 1 };
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 1 }, input1);
-	}
+}
 ```
 
 **Symptom Shown by Running Tests**
@@ -26,21 +26,21 @@
 **Bug Fix for reverseInPlace(int[] arr)**
 _Before:_
 ```
-  static void reverseInPlace(int[] arr) {
+static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = arr[arr.length - i - 1];
+        arr[i] = arr[arr.length - i - 1];
     }
-  }
+}
 ```
 _After:_
 ```
-  static void reverseInPlace(int[] arr) {
+static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length/2; i += 1) {
-      int tempInt = arr[i];
-      arr[i] = arr[arr.length - i - 1];
-      arr[arr.length - i - 1] = tempInt;
+        int tempInt = arr[i];
+        arr[i] = arr[arr.length - i - 1];
+        arr[arr.length - i - 1] = tempInt;
     }
-  }
+}
 ```
 
 ---
