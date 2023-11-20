@@ -22,7 +22,7 @@ public void testReverseInPlace() {
 
 **Symptom Shown by Running Tests**
 
-![image](https://github.com/deeg-p23/cse15l-labs/assets/133953132/4ecbd26e-b9b2-42d4-bb1b-1acf542eb241)
+![image](https://github.com/deeg-p23/cse15l-labs/assets/133953132/5fcaa1c2-b231-4ada-8e91-6447d81e3d98)
 
 **Bug Fix for reverseInPlace(int[] arr)**
 
