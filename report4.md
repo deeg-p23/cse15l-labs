@@ -42,9 +42,9 @@ $ vim ListExamples.java
 Used this command in order to enter the file ListExamples.java into the vim editor.
 
 I then pressed the following keys in order so as to edit the file and properly change the final loop's index1 into an index2 and save the edits:
-<esc> to enter a command, then typed /index1 to search for occurrences of index1, and then <enter>, and then <n><n><n><n><n><n><n><n><n> (9 times) in order to search for the final occurrence of index1.
-Then, pressed <esc> once again, and then pressed <l><l><l><l><l> (5 times) in order to reach the number 2. Then, pressed <x> to delete it, then <i> to enter insertion mode, and pressed <2> to enter 2.
-Finally, pressed <esc> one last time, then <:wq> to save and exit the edits.
+I entered ```:44``` in order to search for the final occurrence of index1 at line 44.
+Then, entered ```e``` the end of the word. Then, pressed ```<x>``` to delete it, then ```<i>``` to enter insertion mode, and pressed ```<2>``` to enter 2.
+Finally, pressed ```<esc>``` one last time, then ```:wq``` to save and exit the edits.
 
 ![image](https://github.com/deeg-p23/cse15l-labs/assets/133953132/74183a39-b3a5-45c7-93bc-6ed8ba2602c2)
 
@@ -67,8 +67,8 @@ $ git commit ListExamples.java
 Used this command in order to commit the most recent changes applied to the java file.
 This entered me into a vim editor for entering a commit message.
 I pressed the following keys in this exact order:
-Pressed <j><j><j><j><j><j><j><j><j><j><j><j><j><j> (13 times) in order to go down to the last entered line. Then, pressed <i>, <l> and <enter> to insert a new line. Then, I entered the following message, "Replaced index1 with index2 in the last for loop in the file." (without quotes).
-Finally, I entered <esc> and <:wq> to save my edits and message. 
+Enterd in ```:14``` in order to go down to the last entered line, which is line 14. Then, pressed ```<l>``` to go right by one, ```<i>``` for insert, and ```<enter>``` to insert a new line. Then, I entered the following message, "Replaced index1 with index2 in the last for loop in the file." (without quotes).
+Finally, I entered ```<esc>``` and typed ```:wq``` and entered to save my edits and message. 
 
 Then, I entered into the terminal:
 ```
